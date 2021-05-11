@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="658.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zad3.SampleController">
+   <left>
+      <BorderPane prefHeight="658.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="602.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="84.0" layoutY="74.0" text="Imię" />
+                  <Label layoutX="55.0" layoutY="130.0" text="Nazwisko" />
+                  <Label layoutX="85.0" layoutY="203.0" text="Płeć" />
+                  <Label layoutX="84.0" layoutY="279.0" text="Nick" />
+                  <Label layoutX="81.0" layoutY="336.0" text="Email" />
+                  <TextField fx:id="TextImie" layoutX="143.0" layoutY="70.0" />
+                  <TextField fx:id="TextNazwisko" layoutX="143.0" layoutY="126.0" />
+                  <TextField fx:id="TextNick" layoutX="143.0" layoutY="275.0" />
+                  <TextField fx:id="TextEmail" layoutX="143.0" layoutY="332.0" />
+                  <RadioButton fx:id="RadioMezczyzna" layoutX="166.0" layoutY="186.0" mnemonicParsing="false" text="Mężczyzna">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="GrupaPlec" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="RadioKobieta" layoutX="166.0" layoutY="220.0" mnemonicParsing="false" text="Kobieta" toggleGroup="$GrupaPlec" />
+                  <Button fx:id="ButtonStworz" layoutX="145.0" layoutY="388.0" mnemonicParsing="false" onAction="#Stworz" prefHeight="51.0" prefWidth="121.0" text="Stwórz" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </left>
+</BorderPane>
