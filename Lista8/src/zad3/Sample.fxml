@@ -12,7 +12,7 @@
    <left>
       <BorderPane prefHeight="658.0" prefWidth="411.0" BorderPane.alignment="CENTER">
          <center>
-            <AnchorPane prefHeight="602.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="655.0" prefWidth="428.0" BorderPane.alignment="CENTER">
                <children>
                   <Label layoutX="84.0" layoutY="74.0" text="Imię" />
                   <Label layoutX="55.0" layoutY="130.0" text="Nazwisko" />
@@ -23,7 +23,7 @@
                   <TextField fx:id="TextNazwisko" layoutX="143.0" layoutY="126.0" />
                   <TextField fx:id="TextNick" layoutX="143.0" layoutY="275.0" />
                   <TextField fx:id="TextEmail" layoutX="143.0" layoutY="332.0" />
-                  <RadioButton fx:id="RadioMezczyzna" layoutX="166.0" layoutY="186.0" mnemonicParsing="false" text="Mężczyzna">
+                  <RadioButton fx:id="RadioMezczyzna" layoutX="166.0" layoutY="186.0" mnemonicParsing="false" selected="true" text="Mężczyzna">
                      <toggleGroup>
                         <ToggleGroup fx:id="GrupaPlec" />
                      </toggleGroup></RadioButton>
